@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   gestAuth = (): void => {
     console.log(this.userId);
     if (this.userId === 'Edoardo' && this.password === '123') {
-      this.route.navigate(['welcome'])
+      this.route.navigate(['welcome', this.userId])
       this.autenticato = true;
     } else {
       this.autenticato = false;
