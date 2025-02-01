@@ -12,6 +12,9 @@ export class LoginComponent implements OnInit {
   autenticato: boolean = true;
   errorMsg: string = 'Spiacenti, il nome utente o la password sono errati.';
   succesMsg: string = 'Autenticazione effettuata con successo';
+  titolo: string = 'Accesso & Autenticazione';
+  sottoTitolo: string = 'Procedi ad inserire la user-id e la password';
+  show: boolean = true;
 
   constructor(private route: Router) {}
 
